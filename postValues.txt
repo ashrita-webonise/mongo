@@ -1,0 +1,28 @@
+//quries for inserting documents into posts collection
+
+db.posts.insert(
+{
+	post_title:'My first post',	
+	post_text: 'Hello how are you?',
+	by: 'ObjectId("57c44e00bcc2067534908d75")',
+	tags: [ObjectId("57c44e00bcc2067534908d75")],
+	post_pictures: 'url',
+	likes: [],
+	posted_at:new Date("2016-08-29"),
+	comments: []
+	
+})
+
+
+
+db.posts.insert(
+{
+	post_title:'my second post',	
+	post_text: 'Come over for a party!',
+	by: 'ObjectId("57c44dfebcc2067534908d72")',
+	tags: [],
+	post_pictures: 'url',
+	likes: [],
+	posted_at:new Date("2016-08-27"),
+	comments: [] 
+})
